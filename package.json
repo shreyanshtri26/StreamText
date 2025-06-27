@@ -1,5 +1,5 @@
 {
-  "name": "streamtext",
+  "name": "StreamText",
   "version": "1.0.0",
   "description": "A dynamic, interactive React application that transforms user input into animated visual elements",
   "main": "index.html",
@@ -21,8 +21,7 @@
     "celebration",
     "web-app"
   ],
-  "author": "StreamText Team",
-  "license": "MIT",
+  "author": "Shreyansh Tripathi",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
@@ -52,10 +51,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/streamtext-react.git"
+    "url": "https://github.com/shreyanshtri26/StreamText"
   },
   "bugs": {
-    "url": "https://github.com/yourusername/streamtext-react/issues"
-  },
-  "homepage": "https://github.com/yourusername/streamtext-react#readme"
+    "url": "https://github.com/shreyanshtri26/StreamText/issues"
+  }
 }

@@ -55,7 +55,7 @@ npm run build
 ## 🏗️ Project Structure
 
 ```
-streamtext-react/
+StreamText/
 ├── public/
 │   └── index.html
 ├── src/
