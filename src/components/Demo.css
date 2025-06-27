@@ -1,0 +1,134 @@
+.demo-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  backdrop-filter: blur(5px);
+}
+
+.demo-content {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 40px;
+  border-radius: 20px;
+  max-width: 600px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+.demo-content h2 {
+  color: #333;
+  margin-bottom: 10px;
+  font-size: 2em;
+}
+
+.demo-content p {
+  color: #666;
+  margin-bottom: 30px;
+  font-size: 1.1em;
+}
+
+.example-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.example-button {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+.example-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+}
+
+.demo-features {
+  text-align: left;
+  background: rgba(102, 126, 234, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  border-left: 4px solid #667eea;
+}
+
+.demo-features h3 {
+  color: #333;
+  margin-bottom: 15px;
+  font-size: 1.3em;
+}
+
+.demo-features ul {
+  list-style: none;
+  padding: 0;
+}
+
+.demo-features li {
+  padding: 5px 0;
+  color: #555;
+  position: relative;
+  padding-left: 20px;
+}
+
+.demo-features li::before {
+  content: "✨";
+  position: absolute;
+  left: 0;
+  top: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .demo-content {
+    padding: 30px 20px;
+  }
+  
+  .demo-content h2 {
+    font-size: 1.6em;
+  }
+  
+  .example-grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+  }
+  
+  .example-button {
+    padding: 10px 16px;
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 480px) {
+  .demo-content {
+    padding: 20px 15px;
+  }
+  
+  .demo-content h2 {
+    font-size: 1.4em;
+  }
+  
+  .example-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .example-button {
+    padding: 8px 12px;
+    font-size: 0.8em;
+  }
+} 
