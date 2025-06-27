@@ -1,24 +1,25 @@
 .animated-text {
   position: absolute;
   font-weight: bold;
-  color: white;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  color: var(--text-color, #fff);
+  text-shadow: var(--text-shadow, 0 0 8px #fff, 0 0 16px #fff, 0 0 32px #a0f, 0 0 64px #0ff);
   padding: 10px 20px;
   border-radius: 25px;
-  backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+  border: 1.5px solid rgba(255, 255, 255, 0.25);
   white-space: nowrap;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
   cursor: pointer;
   user-select: none;
-  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.3s;
   z-index: 10;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 24px 0 rgba(160, 0, 255, 0.25), 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 .animated-text:hover {
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 6px 32px #0ff, 0 6px 20px rgba(0, 0, 0, 0.4);
+  filter: brightness(1.15) saturate(1.2);
 }
 
 /* Responsive Design */

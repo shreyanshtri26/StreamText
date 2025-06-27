@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Demo from './Demo';
 import './InputView.css';
 
-const InputView = ({ onSubmit }) => {
+const InputView = ({ onSubmit, theme }) => {
   const [text, setText] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [showDemo, setShowDemo] = useState(false);
@@ -78,6 +78,7 @@ const InputView = ({ onSubmit }) => {
         <Demo 
           onTextSelect={handleDemoSelect}
           onClose={() => setShowDemo(false)}
+          theme={theme}
         />
       )}
     </div>
