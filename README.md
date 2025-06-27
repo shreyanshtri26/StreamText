@@ -14,13 +14,16 @@ A modern, interactive React app that transforms user input into animated, visual
 - **Theme support**: switch between multiple visual themes
 - **Performance optimized**: React.memo, useCallback, and efficient state management
 
----
+## 🛠️ Tech Stack & Tooling
 
-## 🚀 Deployment Link
+- **Frontend:** React (with hooks, functional components)
+- **Styling:** Modern CSS (custom animations, responsive design)
+- **Deployment:** Vercel ([Live Demo](https://stream-text.vercel.app/))
+- **Version Control:** Git & GitHub
+- **AI Assistance:**
+  - Development supported by AI tools including ChatGPT (GPT-4) for code suggestions, documentation, and refactoring.
 
-- **Vercel Link**: https://stream-text.vercel.app/
 
----
 
 ## 🚀 Getting Started
 
