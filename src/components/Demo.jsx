@@ -1,7 +1,7 @@
 import React from 'react';
 import './Demo.css';
 
-const Demo = ({ onTextSelect }) => {
+const Demo = ({ onTextSelect, onClose }) => {
   const exampleTexts = [
     "Hello World!",
     "Congratulations!",
@@ -17,6 +17,9 @@ const Demo = ({ onTextSelect }) => {
 
   return (
     <div className="demo-container">
+      {onClose && (
+        <button className="demo-close-btn" onClick={onClose} aria-label="Close examples">×</button>
+      )}
       <div className="demo-content">
         <h2>🚀 Quick Start Examples</h2>
         <p>Click any example to see it animated:</p>
@@ -31,18 +34,6 @@ const Demo = ({ onTextSelect }) => {
               {text}
             </button>
           ))}
-        </div>
-        
-        <div className="demo-features">
-          <h3>✨ Features</h3>
-          <ul>
-            <li>5 different animation types</li>
-            <li>Random colors and positions</li>
-            <li>Interactive hover and click effects</li>
-            <li>Up to 5 simultaneous animations</li>
-            <li>Responsive 16:9 aspect ratio</li>
-            <li>Keyboard shortcuts (ESC to return)</li>
-          </ul>
         </div>
       </div>
     </div>

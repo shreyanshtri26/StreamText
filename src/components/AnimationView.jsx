@@ -5,26 +5,10 @@ import ThemeSelector from './ThemeSelector';
 import './AnimationView.css';
 
 const themeStyles = {
-  space: {
-    '--bg-gradient': 'linear-gradient(45deg, #1a1a2e, #16213e, #0f3460)',
-    '--text-color': '#fff',
-    '--text-shadow': '0 0 8px #fff, 0 0 16px #fff, 0 0 32px #a0f, 0 0 64px #0ff',
-  },
-  sunset: {
-    '--bg-gradient': 'linear-gradient(120deg, #ff9966 0%, #ff5e62 100%)',
-    '--text-color': '#fffbe8',
-    '--text-shadow': '0 0 8px #fffbe8, 0 0 16px #ffb347, 0 0 32px #ff5e62',
-  },
-  ocean: {
-    '--bg-gradient': 'linear-gradient(120deg, #2193b0 0%, #6dd5ed 100%)',
-    '--text-color': '#fff',
-    '--text-shadow': '0 0 8px #fff, 0 0 16px #6dd5ed, 0 0 32px #2193b0',
-  },
-  neon: {
-    '--bg-gradient': 'linear-gradient(120deg, #fc00ff 0%, #00dbde 100%)',
-    '--text-color': '#fff',
-    '--text-shadow': '0 0 8px #fff, 0 0 16px #0ff, 0 0 32px #fc00ff',
-  },
+  space: { '--bg-gradient': 'linear-gradient(45deg, #1a1a2e, #16213e, #0f3460)', '--text-color': '#fff', '--text-shadow': '0 0 8px #fff, 0 0 16px #fff, 0 0 32px #a0f, 0 0 64px #0ff' },
+  sunset: { '--bg-gradient': 'linear-gradient(120deg, #ff9966 0%, #ff5e62 100%)', '--text-color': '#fffbe8', '--text-shadow': '0 0 8px #fffbe8, 0 0 16px #ffb347, 0 0 32px #ff5e62' },
+  ocean: { '--bg-gradient': 'linear-gradient(120deg, #2193b0 0%, #6dd5ed 100%)', '--text-color': '#fff', '--text-shadow': '0 0 8px #fff, 0 0 16px #6dd5ed, 0 0 32px #2193b0' },
+  neon: { '--bg-gradient': 'linear-gradient(120deg, #fc00ff 0%, #00dbde 100%)', '--text-color': '#fff', '--text-shadow': '0 0 8px #fff, 0 0 16px #0ff, 0 0 32px #fc00ff' },
 };
 
 const AnimationView = ({ animations, activeIndexes, onBack, onAnimationComplete, theme, setTheme, themes }) => {

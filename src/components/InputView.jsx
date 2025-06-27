@@ -31,7 +31,7 @@ const InputView = ({ onSubmit, theme }) => {
   };
 
   return (
-    <div className="container">
+    <div className="container" style={{position: 'center'}}>
       <div className="input-view">
         <h1>✨ StreamText</h1>
         <p>Enter a name or short phrase to see it come alive!</p>
@@ -69,17 +69,18 @@ const InputView = ({ onSubmit, theme }) => {
         </form>
         
         <div className="input-tips">
-          <p>💡 Try: "Hello World!", "Congratulations!", "Happy Birthday!"</p>
-          <p>⌨️ Press Enter to submit quickly</p>
+          <h7>⌨️ Press Enter to submit quickly and ESC to go back</h7>
         </div>
       </div>
 
       {showDemo && (
-        <Demo 
-          onTextSelect={handleDemoSelect}
-          onClose={() => setShowDemo(false)}
-          theme={theme}
-        />
+        <div className="demo-popup-wrapper">
+          <Demo 
+            onTextSelect={handleDemoSelect}
+            onClose={() => setShowDemo(false)}
+            theme={theme}
+          />
+        </div>
       )}
     </div>
   );
