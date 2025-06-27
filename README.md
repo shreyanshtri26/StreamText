@@ -210,12 +210,6 @@ const animationTypes = [
 1. Connect your GitHub repository to Vercel
 2. Vercel will automatically build and deploy
 
-### **GitHub Pages**
-1. Add `"homepage": "https://yourusername.github.io/streamtext-react"` to package.json
-2. Install gh-pages: `npm install --save-dev gh-pages`
-3. Add deploy script: `"deploy": "gh-pages -d build"`
-4. Run: `npm run deploy`
-
 ## 🧪 Testing
 
 ```bash
